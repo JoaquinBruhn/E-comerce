@@ -1,0 +1,11 @@
+.boton {
+  padding: 10px;
+  border-radius: 50px;
+}
+
+.blanco {
+  background-color: white;
+}
+.rojo {
+  background-color: red;
+}
