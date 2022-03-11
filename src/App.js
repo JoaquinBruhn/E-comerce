@@ -1,9 +1,12 @@
+import { Home } from './pages/home.js'
+import { Navbar } from './components/navbar/navbar.js'
+import './global-styles.css'
+
 function App() {
 	return (
 		<div className="App">
-			<h3>Pirulo</h3>
-			<Pirulo />
-			<Pirulo />
+			<Navbar />
+			<Home />
 		</div>
 	)
 }
