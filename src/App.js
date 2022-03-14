@@ -1,14 +1,19 @@
-import { Home } from './pages/home.js'
-import { Navbar } from './components/navbar/navbar.js'
-import './global-styles.css'
+import { Home } from "./pages/home.js";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Navbar } from "./components/navbar/navbar.js";
+import "./global-styles.css";
 
 function App() {
-	return (
-		<div className="App">
-			<Navbar />
-			<Home />
-		</div>
-	)
+  return (
+    <div className="App">
+      <BrowserRouter>
+        <Navbar />
+        <Routes>
+          <Route exact path="/" element={<Home />} />
+        </Routes>
+      </BrowserRouter>
+    </div>
+  );
 }
 
-export default App
+export default App;
