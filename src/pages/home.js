@@ -1,5 +1,10 @@
 import React from 'react'
+import { Sliders } from '../components/sliders/Sliders'
 
 export const Home = () => {
-	return <div>home</div>
+	return (
+		<>
+			<Sliders />
+		</>
+	)
 }
